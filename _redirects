@@ -1,0 +1,9 @@
+# Netlify Redirects for Sakura Sushi
+# SPA fallback
+/*    /index.html   200
+
+# Admin panel (if deployed as subpath)
+/admin/*    /admin/index.html   200
+
+# API routes (Netlify Functions)
+/api/*  /.netlify/functions/:splat  200
